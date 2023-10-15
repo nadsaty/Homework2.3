@@ -13,5 +13,17 @@ public class Main {
         Car car = new Car("\n Toyota \n", 4);
 
         Truck truck = new Truck("\n Kamaz \n", 4);
+
+
+        ServiceStation serviceStation = new ServiceStation();
+
+        System.out.println(bicycle.getModelName());
+        serviceStation.checkTransport(bicycle);
+
+        System.out.println(car.getModelName());
+        serviceStation.checkTransport(car);
+
+        System.out.println(truck.getModelName());
+        serviceStation.checkTransport(truck);
     }
 }
